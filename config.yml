@@ -1,0 +1,16 @@
+# folder for input
+InputFolder: '../data/input/'
+# folder for output
+OutputFolder: '../data/output/'
+# columns to extract
+Columns:
+    - 'ID'
+    - 'Prctr'
+    - 'Bezeichnung'
+    - 'Jahr'
+    - 'Produktbereich'
+    - 'Kostenart'
+    - 'Betrag'
+    - 'Budget_Richtung'
+# name of the column contains id of the row
+Column_ID_Name: 'ID'
