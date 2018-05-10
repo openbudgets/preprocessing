@@ -51,6 +51,13 @@ def extract_columns(file, columns_name, id_column_name):
 
 
 def write_file(output_folder, file, columns):
+    """
+    write processed file to output
+    :param output_folder: output folder for transformed file
+    :param file: file name to write to
+    :param columns: generated columns with corresponding values
+    :return:
+    """
     with open(output_folder + file, 'w') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(columns.keys())
