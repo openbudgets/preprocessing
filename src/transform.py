@@ -58,7 +58,7 @@ def write_file(output_folder, file, columns):
     :param columns: generated columns with corresponding values
     :return:
     """
-    with open(output_folder + file, 'w') as csv_file:
+    with open(output_folder + file, 'w', newline='') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(columns.keys())
         rows = zip(*columns.values())
